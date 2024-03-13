@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;   
+    text-decoration: none;
+     
+}
+body{
+    height: 100vh;
+    width: fit-content;
+    text-align: center;
+      padding: 0.1rem;
+      background: linear-gradient(
+        to right,
+        rgb(215, 120, 250),
+        rgb(219, 145, 232),
+        rgb(100, 206, 214)
+      );
+}
+.header{
+  display: flex;
+  flex-direction: row;
+  padding: 1.5rem;
+  margin-left: 1.4rem;
+  gap: 10rem;
+  margin-top: 2rem;
+}
+.name{
+  color: rgb(248, 248, 253);
+}
+.nav a {
+  color: #550252;
+  font-size: x-large;
+  font-weight: bold;
+
+}
+.nav a:hover{
+  transform: scale(1.20); 
+  color: #550252;
+  transition: 0.3s;
+}
+
+.nav{
+  display: flex;
+  gap: 4rem;
+}
+@media(min-width:768px) {
+  .nav{
+      display: flex;
+  }
+}
+
+.content {
+  max-width: 1200px;
+  max-height: fit-content;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+  position:relative;
+}
+.left-side,
+.right-side {
+  flex-grow: 1; 
+}
+.left-side{
+  text-align: start;
+  animation: slideFromLeft 1s ease forwards; 
+  opacity: 0; 
+  padding-left: 3rem;
+  padding-top: 3rem;
+}
+.right-side {
+  display: flex;
+  justify-content: center;
+}
+
+.doingWorkContent {
+  max-width: 230%;
+  height: 450px;
+  padding-left: 2px;
+  mix-blend-mode: color-burn;
+}
+@keyframes slideFromLeft{
+  0%{
+      opacity: 0;
+      transform: translateX(-100%);
+  }
+  100%{
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+.madimi-one-regular {
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-left: 0.5rem;
+  font-size: 4rem;
+}
+.wave{
+  padding-left: 0.65rem;
+  height: 50px;
+  width: 50px;
+}
+.pintro{
+  padding-top: 3rem;
+  line-height: 3rem;
+  color: #550252;
+  font-size: 1.675rem;
+  font-weight: bold;
+}
+
+.fa-2xl{
+  padding-top: 2.5rem;
+  color: inherit;
+  gap: 20px;
+  padding-inline: 1rem;
+
+}
+.fa-2xl:hover{
+  transform: scale(1.8);
+  transition: 0.3s;
+  color: inherit;
+}
+.lbutton-box {
+  margin-top: 4rem;
+  padding: 2rem 0; 
+  gap: 2rem; 
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+
+.lbutton {
+  padding: 1.5rem 3rem;
+  font-size: 1.2rem; 
+  font-weight: 600;
+  border: 2px solid #645d5d;
+  border-radius: 20px; 
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; 
+}
+
+.lbutton:hover {
+  background-color: var(--accent-color);
+  color: white;
+  transform: scale(1.05);
+}
+.second-page {
+  margin: 0 auto;
+  display:flex;
+  justify-content: space-between; 
+  padding: 1rem;
+  gap: 7rem;
+}
+.second-left {
+  width:42rem;
+  margin-left: 2rem;
+  padding-top: 5rem;
+  justify-content: space-between; 
+  display: inline;
+}
+.myskill{
+  height: 6rem;
+  width: 6rem;
+  border-radius: 5px;
+  margin: 30px;
+ 
+}
+.node{
+  background-color: white;
+}
+.second-right {
+  flex: 1; 
+  text-align: left; 
+  animation: slideFromLeft 1s ease forwards;
+  opacity: 0;
+  padding: 5px; 
+}
+
+.sec-heading {
+  font-size: 3.5rem; 
+  font-weight: 400; 
+  margin-bottom: 1.5rem; 
+}
+
+.sec-para {
+  width: 100%;
+  font-size: 1.2rem; 
+  line-height: 1.6; 
+  color: #25065a; 
+  font-weight: bold;
+}
+.sec-points {
+  margin-bottom: 2rem;
+   
+}
+
+.sec-points ol {
+  list-style-type: none; 
+  counter-reset: my-counter; 
+}
+
+.sec-points ol li {
+  font-size: 1.26rem;
+  color: #25065a;
+  position: relative;
+  padding-left: 2rem; 
+  margin-bottom: 1rem;
+}
+
+.sec-points ol li:before {
+  content: counter(my-counter);
+  counter-increment: my-counter; 
+  position: absolute; 
+  left: 0;
+  font-weight: bold; 
+  color: white; 
+}
+@keyframes slideFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.third-page {
+  display: flex;
+  justify-content: space-between;
+}
+
+.third-left {
+  width: 50%;
+  margin-top: 2rem;
+  padding-left: 5rem;
+}
+
+.third-right {
+  width: 30%;
+  padding-top: 20rem;
+  padding-right: 5rem;
+}
+
+.third-heading {
+  padding-top: 2rem;
+  margin-bottom: 3.5rem;
+}
+
+.t-heading {
+  font-size: 4rem;
+}
+
+.third-bar {
+  margin-bottom: 2rem;
+  font-size: 2.26rem;
+  color:#550252;
+  font-weight: bold ;
+
+}
+.progress {
+  margin-top: 2rem;
+  margin-bottom: 3.5rem;
+  
+  
+}
+.progress-bar {
+  height: 100%;
+  font-size: 14px;
+  background-color: #530850 !important; 
+ 
+}
+.t-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.forth-container{
+  background-attachment: var(--background-color);
+  padding: 2rem;
+  margin: 0 auto;
+  max-width: 1280px;
+}
+.forth-content{
+  display: flex;
+  flex-direction: column;
+}
+.forth-title{
+  font-size: 3.875rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 2rem;
+}
+.f-trophy{
+  padding-left: 1rem;
+  width: 80px;
+  height: 60px;
+}
+.forth-grid{
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(335px,1fr));
+  gap: 6.375rem;
+}
+.forth-card{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(118, 117, 117);
+  border-radius: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 1.2rem;
+  height: 500px;
+  width: 400px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 4px 4px 4px grey;
+}
+.forth-card:hover{
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0,0,0,0,2);
+  border: 1px solid blue;
+}
+.forth-avatar{
+  height: 60%;
+}
+.forth-avatar img{
+  height: 100%;
+  width: 90%;
+}
+.forth-text{
+  color: white;
+  font-size: 1.875rem;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+}
+.forth-desc{
+  font-size: 1rem;
+  color: var(--text-color);
+  line-height: 1.675rem;
+}
+.last {
+  display: flex; 
+  flex-direction: row; 
+}
+.last .bio {
+  margin-right: 30rem;
+  max-width: 70%;
+  padding-left: 5rem;
+  font-size: larger;
+  font-weight: bold;
+  padding-top: 2rem;
+}
+
+.myimage{
+  max-width: 100%;
+  height: 20rem;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: solid 5px whitesmoke;
+}
+
+footer{
+  background: #530850;
+  width: 100%;
+}
